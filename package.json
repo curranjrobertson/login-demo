@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "proxy": "ory proxy --no-jwt --port 4000 http://localhost:3000/"
   },
   "dependencies": {
     "@ory/cli": "^0.1.33",
